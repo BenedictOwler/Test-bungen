@@ -1,30 +1,32 @@
-#include <stdio.h>
+
+#void sum (int *Array, int lenght)
+{
+
+  int sum = 0;
+
+  for (int i = 0; i < lenght; i++)
+    {
+
+      sum = sum + Array[i];
 
 
-void sum(char * Array) {
+    }
+  return sum;
 
-int x,y,lenght, temp ; 
-
-x = y = temp = 0;
-lenght = strlen(Array);
-
-for (x = "99", y="1");
-
-
-    
-    
-    
 }
 
-
-int main()
+int main ()
 {
-    char Array[] = "99" ;
-    char Array2[] = "1" ;
-    
-printf("Zahlen:\t%s und \t%s", Array, Array2); 
+  int rArray[] = srand(100);
+  int lenght = 100;
 
+  printf ("Die Zahlen des Arrays sind %s\n", rArray);
 
+  sum (rArray, lenght);
+  for (int i = 0; i < lenght; i++)
+    {
+      printf ("Die Summe des Arrays ist %s\n", rArray[i]);
+    }
+  return 0;
 
-    return 0;
 }
